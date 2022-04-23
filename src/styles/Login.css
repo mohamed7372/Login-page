@@ -63,6 +63,9 @@
     margin-top: 10px;
     border: none;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn.sign {
@@ -73,9 +76,6 @@
 .btn.google {
     border: 1px solid #ccc;
     background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .btn.google img {
@@ -124,6 +124,7 @@ p>a {
     color: var(--main-color);
     text-decoration: none;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .plus {
