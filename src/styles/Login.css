@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --main-color: #7f56da;
+    --second-color: white;
+    --grey: #6c707b;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.login {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.login>* {
+    width: 50%;
+}
+
+.login .img {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login .img>div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background-color: #f3f4f8;
+}
+
+.login .img div .circle {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-color: var(--main-color);
+}
+
+.login .img div .cir1 {
+    bottom: -100px;
+}
+
+.login .img div .cir2 {
+    top: -100px;
+    filter: blur(40px);
+}
+
+.btn {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn.sign {
+    color: white;
+    background-color: var(--main-color);
+}
+
+.btn.google {
+    border: 1px solid #ccc;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn.google img {
+    width: 28px;
+    margin-right: 10px;
+}
+
+form {
+    padding: 0 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form h1 {
+    font-weight: 900;
+    color: #101827;
+    margin-bottom: 15px;
+}
+
+form p {
+    color: var(--grey);
+    margin-top: 10px;
+}
+
+label {
+    color: #373e49;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type='checkbox'] {
+    margin-right: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+form p:last-of-type {
+    text-align: center;
+    margin-top: 30px;
+}
+
+p>a {
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.plus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.plus>p {
+    color: var(--main-color);
+    font-weight: 700;
+    margin: 0 !important;
+    cursor: pointer;
+}
+
+@media (max-width:800px) {
+    .login {
+        height: 100%;
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    .login>* {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    form h1,
+    form>p {
+        text-align: center;
+    }
+
+    .login .img {
+        width: 100%;
+        height: 100px;
+        margin: 20px 0;
+    }
+
+    .login .img>div {
+        background-color: white;
+    }
+
+    .login .img div .circle {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .login .img div .cir1 {
+        bottom: -20px;
+    }
+
+    .login .img div .cir2 {
+        top: -20px;
+        filter: blur(14px);
+    }
+}

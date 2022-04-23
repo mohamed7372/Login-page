@@ -1,0 +1,22 @@
+.input-custom {
+    margin-top: 25px;
+    width: 100%;
+}
+
+.input-custom input {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    outline: none;
+    padding: 0 20px;
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    color: #6c707b;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.input-custom label {
+    text-transform: capitalize;
+}
